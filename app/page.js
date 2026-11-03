@@ -42,25 +42,25 @@ export default function Home() {
 
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-[#12372A] font-sansation">
-      <div className="grid grid-cols-2 w-[90vw] items-center justify-center py-30">
-        <div className="items-start justify-start h-fit w-full flex flex-col">
+      <div className="grid grid-cols-1 lg:grid-cols-2 w-[90vw] items-center justify-center py-15 lg:py-30 gap-y-10 lg:gap-y-0">
+        <div className="items-center lg:items-start justify-start h-fit w-full flex flex-col">
           <Image src={"/EvergreenLogo1.png"} alt="image" width="1000" height="100" className="w-[80%]"/>
-          <p className="text-[#8E9E7B] text-left text-md lg:text-2xl leading-relaxed py-5">
+          <p className="text-[#8E9E7B] text-center lg:text-left text-md lg:text-2xl leading-relaxed py-5">
             This fall we invite you and your friends to join us for Evergreen, a hackathon for teenagers in Springfield, Missouri. Over the course of two days, you'll <strong>learn something new, make something you're really proud of, meet new friends,</strong> and go on an incredible adventure together. Everything is <strong>completely free,</strong> including food and merch!
           </p>
-          <div className="lg:col-span-2 lg:col-start-2 items-center justify-center flex">
+          <div className="items-center justify-center flex">
             <a className="z-10 min-w-[40%] h-10 bg-red-500 rounded-xl" target="_blank" rel="noopener noreferrer" href="https://springfieldhackers.fillout.com/evergreen">
               <button className="min-w-[100%] min-h-[100%] bg-[#8E9E7B] cursor-pointer text-black text-2xl rounded-xl px-5">Sign Up</button>
             </a>
           </div>
         </div>
-        <div className="items-end justify-center h-full w-full flex flex-col">
-          <Image src={"/cover.png"} alt="image" width="1000" height="100" className="w-[80%]"/>
+        <div className="items-center lg:items-end justify-center h-full w-full flex flex-col">
+          <Image src={"/cover.png"} alt="image" width="1000" height="100" className="w-full lg:w-[80%]"/>
         </div>
       </div>
 
-      <div className="flex flex-col w-full items-start justify-start h-fit bg-[#8E9E7B] px-[5vw] py-20 gap-y-15">
-        <div className="grid grid-cols-2 items-start justify-start w-full gap-x-15">
+      <div className="flex flex-col w-full items-start justify-start h-fit bg-[#8E9E7B] px-[5vw] py-10 lg:py-20 lg:gap-y-15">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-start justify-start w-full gap-x-15">
           <div className="items-start justify-start h-fit w-full flex flex-col">
             <Image src={"/Who.png"} alt="image" width="1000" height="100" className="w-[40%]"/>
             <p className="text-[#12372A] text-left text-md lg:text-2xl leading-relaxed py-5">
@@ -74,7 +74,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 items-start justify-start w-full gap-x-15">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-start justify-start w-full gap-x-15">
           <div className="items-start justify-start h-fit w-full flex flex-col">
             <Image src={"/When.png"} alt="image" width="1000" height="100" className="w-[40%]"/>
             <p className="text-[#12372A] text-left text-md lg:text-2xl leading-relaxed py-5">
@@ -149,12 +149,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full items-start justify-start h-fit bg-[#12372A] px-[5vw] py-20">
+      <div className="flex flex-col w-full items-start justify-start h-fit bg-[#12372A] px-[5vw] py-10 lg:py-20">
         <div className="flex flex-col w-full">
           <h1 className="text-center pb-2 text-2xl font-sansation-bold lg:text-4xl">SCHEDULE</h1>
           <p className="text-center pb-10 text-md lg:text-md px-10 lg:px-0">* Participants are not required (but are recommended) to be present for the entirety of the event *</p>
         </div>
-        <div className="flex w-full gap-x-10">
+        <div className="flex flex-col lg:flex-row w-full gap-x-10 gap-y-10">
           <div className="items-center justify-center bg-[#562C21]/80 lg:bg-[#562C21] rounded-xl border border-3 border-black z-10 min-h-80 max-w-200 py-10 mx-auto w-full">
             {scheduleData1.map((day, index) => (
               <div key={index} className="text-white z-20 text-center text-lg lg:text-xl mb-5 lg:mb-10 py-2 px-6 sm:px-10 lg:px-30">{day.title}
@@ -196,7 +196,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full items-center justify-start h-fit bg-[#D6D3B5] px-[5vw] py-20 text-[#12372A]">
+      <div className="flex flex-col w-full items-center justify-start h-fit bg-[#D6D3B5] px-[5vw] py-10 lg:py-20 text-[#12372A]">
         <h1 className="text-center py-5 lg:pb-10 text-2xl font-sansation-bold lg:text-4xl">ABOUT US</h1>
         <p className="text-left text-md lg:text-2xl leading-relaxed py-5">
           We are Springfield Hackers, affiliated with Hack Club, and our mission is to create more free and accessible STEM events such as this one to the teenage community of Springfield Missouri. We are teen-led and we aim to create a welcoming community to all who are interested in the world of tech and coding.
@@ -210,11 +210,11 @@ export default function Home() {
           <p className="text-left text-md lg:text-2xl leading-relaxed">
             Check out the recaps of our last two events! Aurora was hosted in February 2026 at Missouri State University, and Daydream Missouri was hosted in September 2025 at Drury University.
           </p>
-          <div className="flex w-full items-start justify-start gap-x-10">
-            <a href="/AuroraRecap.pdf" target="_blank" rel="noopener noreferrer" className="w-[40%] hover:shadow-xl transition-shadow duration-300 shadow-black/50 shadow-md">
+          <div className="flex flex-col lg:flex-row gap-y-5 w-full items-start justify-start gap-x-10">
+            <a href="/AuroraRecap.pdf" target="_blank" rel="noopener noreferrer" className="w-full lg:w-[40%] hover:shadow-xl transition-shadow duration-300 shadow-black/50 shadow-md">
               <Image src={"/images/aurora.png"} alt="image" width="1000" height="100" className="w-full"/>
             </a>
-            <a href="/DaydreamRecap.pdf" target="_blank" rel="noopener noreferrer" className="w-[37%] hover:shadow-xl transition-shadow duration-300 shadow-black/50 shadow-md">
+            <a href="/DaydreamRecap.pdf" target="_blank" rel="noopener noreferrer" className="w-full lg:w-[37%] hover:shadow-xl transition-shadow duration-300 shadow-black/50 shadow-md">
               <Image src={"/images/daydream.png"} alt="image" width="1000" height="100" className="w-full"/>
             </a>
           </div>
