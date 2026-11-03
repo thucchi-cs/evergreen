@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   const scheduleData1 = [
     {
-      title: "Saturday, February 28th",
+      title: "Saturday, November 21st",
       items: [
         {event: "Doors open", time: "9:00 AM"},
         {event: "Opening Ceremony", time: "9:30 AM"},
@@ -13,30 +13,35 @@ export default function Home() {
         {event: "Activity", time: "2:30 PM"},
         {event: "Workshop 2", time: "4:30 PM"},
         {event: "Dinner", time: "6:00 PM"},
-        {event: "1st projects demo", time: "7:30 PM"},
+        {event: "1st projects demo", time: "7:00 PM"},
         {event: "Go home and rest", time: "8:00 PM"}
       ]
     }
   ];
   const scheduleData2 = [
     {
-      title: "Sunday, March 1st",
+      title: "Sunday, November 22nd",
       items: [
         {event: "Doors open", time: "9:00 AM"},
         {event: "Breakfast", time: "9:00 AM"},
         {event: "Workshop 3", time: "11:00 AM"},
         {event: "Lunch", time: "12:30 PM"},
         {event: "Activity", time: "2:30 PM"},
-        {event: "Submissions close!", time: "4:00 PM"},
-        {event: "Demos and judging!", time: "4:30 PM"},
-        {event: "Closing ceremony", time: "5:00 PM"},
-        {event: "Home!", time: "5:30 PM"}
+        {event: "Submissions close!", time: "4:30 PM"},
+        {event: "Demos and judging!", time: "5:00 PM"},
+        {event: "Closing ceremony", time: "5:30 PM"},
+        {event: "Home!", time: "6:00 PM"}
       ]
     }
   ];
 
+  const sponsors = [
+    {image: "/images/NPD-Logo-color.png", url: "https://www.beyondthecontract.com/", name: "NorthPoint Development"},
+    {image: "/images/Mostly_Serious_logo_Orange.png", url: "https://www.mostlyserious.io/", name: "Mostly Serious"}
+  ];
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-[#12372A] font-sans">
+    <div className="flex flex-col flex-1 items-center justify-center bg-[#12372A] font-sansation">
       <div className="grid grid-cols-2 w-[90vw] items-center justify-center h-[100vh]">
         <div className="items-start justify-start h-fit w-full flex flex-col">
           <Image src={"/EvergreenLogo1.png"} alt="image" width="1000" height="100" className="w-[80%]"/>
@@ -65,7 +70,7 @@ export default function Home() {
           <div className="items-start justify-start h-fit w-full flex flex-col">
             <Image src={"/What.png"} alt="image" width="1000" height="100" className="w-[40%]"/>
             <p className="text-[#12372A] text-left text-md lg:text-2xl leading-relaxed py-5">
-              During the hackathon, you will team up with other attendees, attend workshops, create your own coding project (website, game, etc), then win prizes for your projects!
+              During the hackathon, you will team up with other attendees, attend workshops, create your own original coding project (website, game, etc), then win prizes for your projects!
             </p>
           </div>
         </div>
@@ -83,7 +88,65 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </div>
 
+      <div className="items-center justify-center bg-[#25433C] mb-10 z-10 min-h-80 py-10 lg:px-10 mx-auto w-[100%] lg:w-full">
+        <h1 className="text-center pb-2 text-xl font-sansation-bold lg:text-4xl">What Will You Make?</h1>
+        <h1 className="text-center pb-10 text-md lg:text-xl px-5 lg:px-0">Take a look at the below sample projects made by participants at our last events!</h1>
+
+        <div className="w-100 overflow-x-auto lg:h-full lg:w-full">
+          <div className="items-start justify-center h-full flex gap-6  sm:grid lg:grid sm:grid-cols-2 lg:grid-cols-4 lg:gap-10 min-w-max lg:min-w-full lg:w-full">
+
+            <div className="snap-center max-w-60 flex-shrink lg:max-w-full">
+              <a href="https://thee-best.itch.io/the-test-of-sacrifice" target="_blank" rel="noopener noreferrer">
+                <img src="/images/TheTestOfSacrifice.png" alt="Test Of Sacrifice Game" className="w-full"></img>
+              </a>
+              <p className="text-white z-20 text-center text-md lg:text-xl font-sansation-bold mt-3 underline">
+                <a href="https://thee-best.itch.io/the-test-of-sacrifice" target="_blank" rel="noopener noreferrer">The Test of Sacrifice</a>
+              </p>
+              <p className="text-white z-20 text-center text-sm lg:text-lg">
+                A two-player platformer made in Godot. This game won first place at one of our past hackathons: Daydream Missouri!
+              </p>
+            </div>
+
+            <div className="snap-center max-w-60 flex-shrink lg:max-w-full">
+              <a href="https://thucchi-cs.itch.io/funky-forest" target="_blank" rel="noopener noreferrer">
+                <img src="/images/FunkyForest.jpg" alt="FinTrack Website" className="w-full"></img>
+              </a>
+              <p className="text-white z-20 text-center text-md lg:text-xl font-sansation-bold mt-3 underline">
+                <a href="https://thucchi-cs.itch.io/funky-forest" target="_blank" rel="noopener noreferrer">Funky Forest</a>
+              </p>
+              <p className="text-white z-20 text-center text-sm lg:text-lg">
+                A fun rhythm game where you help squirrels catch acorns while they're rocking out! Funky Forest was made with Python's Pygame.
+              </p>
+            </div>
+
+            <div className="snap-center max-w-60 lg:max-w-full">
+              <a href="https://tgs2401.itch.io/just-press-space" target="_blank" rel="noopener noreferrer">
+                <img src="/images/justpressspace.png" alt="JustPressSpace Game" className="w-full"></img>
+              </a>
+              <p className="text-white z-20 text-center text-md lg:text-xl font-sansation-bold mt-3 underline">
+                <a href="https://tgs2401.itch.io/just-press-space" target="_blank" rel="noopener noreferrer">Just Press Space</a>
+              </p>
+              <p className="text-white z-20 text-center text-sm lg:text-lg">
+                A survival platformer where you must outrun the aliens. This game was made with Godot and includes original art by the creator.
+              </p>
+            </div>
+
+            <div className="snap-center max-w-60 flex-shrink lg:max-w-full">
+              <a href="https://nerdinator.itch.io/of-stars-and-beats" target="_blank" rel="noopener noreferrer">
+                <img src="/images/ofstarsandbeats.png" alt="Of Stars And Beats Game" className="w-full"></img>
+              </a>
+              <p className="text-white z-20 text-center text-md lg:text-xl font-sansation-bold mt-3 underline">
+                <a href="https://nerdinator.itch.io/of-stars-and-beats" target="_blank" rel="noopener noreferrer">Of Stars And Beats</a>
+              </p>
+              <p className="text-white z-20 text-center text-sm lg:text-lg">
+                A space themed multi-level platformer made with Godot. This game won first at our last hackathon: Aurora!
+              </p>
+            </div>
+
+          </div>
+        </div>
       </div>
 
       <div className="flex flex-col w-full items-start justify-start min-h-[100vh] h-fit bg-[#12372A] px-[5vw] py-20">
@@ -92,7 +155,7 @@ export default function Home() {
           <p className="text-center pb-10 text-md lg:text-md px-10 lg:px-0">* Participants are not required (but are recommended) to be present for the entirety of the event *</p>
         </div>
         <div className="flex w-full gap-x-10">
-          <div className="items-center justify-center bg-[#562C21]/80 lg:bg-[#562C21] rounded-xl border border-3 border-black mb-10 z-10 min-h-80 max-w-200 py-10 mx-auto w-full">
+          <div className="items-center justify-center bg-[#562C21]/80 lg:bg-[#562C21] rounded-xl border border-3 border-black z-10 min-h-80 max-w-200 py-10 mx-auto w-full">
             {scheduleData1.map((day, index) => (
               <div key={index} className="text-white z-20 text-center text-lg lg:text-xl mb-5 lg:mb-10 py-2 px-6 sm:px-10 lg:px-30">{day.title}
                   {day.items.map((item, index) => (
@@ -104,7 +167,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="items-center justify-center bg-[#562C21]/80 lg:bg-[#562C21] rounded-xl border border-3 border-black mb-10 z-10 min-h-80 max-w-200 py-10 mx-auto w-full">
+          <div className="items-center justify-center bg-[#562C21]/80 lg:bg-[#562C21] rounded-xl border border-3 border-black z-10 min-h-80 max-w-200 py-10 mx-auto w-full">
             {scheduleData2.map((day, index) => (
               <div key={index} className="text-white z-20 text-center text-lg lg:text-xl mb-5 lg:mb-10 py-2 px-6 sm:px-10 lg:px-30">{day.title}
                   {day.items.map((item, index) => (
@@ -119,6 +182,19 @@ export default function Home() {
         </div>
       </div>
         
+      {/* <div className="flex flex-col w-full items-start justify-start min-h-[100vh] h-fit bg-[#8E9E7B] px-[5vw] py-20 gap-y-15">
+          <div className="flex flex-col w-full">
+            <h1 className="text-center py-5 lg:pb-10 text-2xl font-sansation-bold lg:text-4xl">Sponsors</h1>
+            <div className="flex items-center justify-center gap-10 flex-col lg:flex-row">
+              {sponsors.map((sponsor, index) => (
+                <a key={index} href={sponsor.url} target="_blank" rel="noopener noreferrer">
+                  <img src={sponsor.image} alt={sponsor.name} className="w-full max-h-30"></img>
+                </a>
+              ))}
+            </div>
+            <p className="text-white text-center text-sm lg:text-lg py-10 lg:mt-5">Want to support Evergreen? Email us at <a className="underline" href="mailto:dothucchi@gmail.com">dothucchi@gmail.com</a></p>
+        </div>
+      </div> */}
         {/* <div className="flex flex-col w-full h-[200vh] items-center justify-center gap-6 text-center bg-gradient-to-b from-[#12372A] from-70% to-[#70887E]">
           hello
         </div> */}
