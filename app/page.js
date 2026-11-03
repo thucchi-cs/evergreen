@@ -151,7 +151,7 @@ export default function Home() {
 
       <div className="flex flex-col w-full items-start justify-start min-h-[100vh] h-fit bg-[#12372A] px-[5vw] py-20">
         <div className="flex flex-col w-full">
-          <h1 className="text-center pb-2 text-2xl font-sansation-bold lg:text-4xl">Schedule</h1>
+          <h1 className="text-center pb-2 text-2xl font-sansation-bold lg:text-4xl">SCHEDULE</h1>
           <p className="text-center pb-10 text-md lg:text-md px-10 lg:px-0">* Participants are not required (but are recommended) to be present for the entirety of the event *</p>
         </div>
         <div className="flex w-full gap-x-10">
@@ -182,26 +182,51 @@ export default function Home() {
         </div>
       </div>
         
-      {/* <div className="flex flex-col w-full items-start justify-start min-h-[100vh] h-fit bg-[#8E9E7B] px-[5vw] py-20 gap-y-15">
-          <div className="flex flex-col w-full">
-            <h1 className="text-center py-5 lg:pb-10 text-2xl font-sansation-bold lg:text-4xl">Sponsors</h1>
-            <div className="flex items-center justify-center gap-10 flex-col lg:flex-row">
-              {sponsors.map((sponsor, index) => (
-                <a key={index} href={sponsor.url} target="_blank" rel="noopener noreferrer">
-                  <img src={sponsor.image} alt={sponsor.name} className="w-full max-h-30"></img>
-                </a>
-              ))}
-            </div>
-            <p className="text-white text-center text-sm lg:text-lg py-10 lg:mt-5">Want to support Evergreen? Email us at <a className="underline" href="mailto:dothucchi@gmail.com">dothucchi@gmail.com</a></p>
+      <div className="flex flex-col w-full items-start justify-start h-fit bg-[#24353A] px-[5vw] py-20 gap-y-15">
+        <div className="flex flex-col w-full">
+          <h1 className="text-center py-5 lg:pb-10 text-2xl font-sansation-bold lg:text-4xl">SPONSORS</h1>
+          <div className="flex items-center justify-center gap-10 flex-col lg:flex-row">
+            {sponsors.map((sponsor, index) => (
+              <a key={index} href={sponsor.url} target="_blank" rel="noopener noreferrer">
+                <img src={sponsor.image} alt={sponsor.name} className="w-full max-h-30"></img>
+              </a>
+            ))}
+          </div>
+          <p className="text-white text-center text-sm lg:text-lg py-10 lg:mt-5">Want to support Evergreen? Email us at <a className="underline" href="mailto:dothucchi@gmail.com">dothucchi@gmail.com</a></p>
         </div>
-      </div> */}
-        {/* <div className="flex flex-col w-full h-[200vh] items-center justify-center gap-6 text-center bg-gradient-to-b from-[#12372A] from-70% to-[#70887E]">
-          hello
-        </div> */}
+      </div>
 
-        {/* <div className="flex flex-col w-full h-[100vh] items-center justify-center gap-6 text-center bg-gradient-to-b from-[#70887E] from-70% to-[#70887E]">
-          hello
-        </div> */}
+      <div className="flex flex-col w-full items-center justify-start min-h-[100vh] h-fit bg-[#D6D3B5] px-[5vw] py-20 text-[#12372A]">
+        <h1 className="text-center py-5 lg:pb-10 text-2xl font-sansation-bold lg:text-4xl">ABOUT US</h1>
+        <p className="text-left text-md lg:text-2xl leading-relaxed py-5">
+          We are Springfield Hackers, affiliated with Hack Club, and our mission is to create more free and accessible STEM events such as this one to the teenage community of Springfield Missouri. We are teen-led and we aim to create a welcoming community to all who are interested in the world of tech and coding.
+        </p>
+        <p className="text-left text-md lg:text-2xl leading-relaxed py-5">
+          Hack Club is the world's largest teenage coding community in the US. We host many events like this worldwide to provide free tech education to all. You can learn more about Hack Club at <a href="https://hackclub.com/" target="__blank" className="underline">hackclub.com</a>.
+        </p>
+
+        <div className="flex flex-col w-full items-start justify-start pt-10">
+          <h1 className="text-left py-5 lg:pt-10 text-2xl font-sansation-bold lg:text-4xl">Our Past Events</h1>
+          <p className="text-left text-md lg:text-2xl leading-relaxed">
+            Check out the recaps of our last two events! Aurora was hosted in February 2026 at Missouri State University, and Daydream Missouri was hosted in September 2025 at Drury University.
+          </p>
+          <div className="flex w-full items-start justify-start gap-x-10">
+            <a href="/AuroraRecap.pdf" target="_blank" rel="noopener noreferrer" className="w-[40%] hover:shadow-xl transition-shadow duration-300 shadow-black/50 shadow-md">
+              <Image src={"/images/aurora.png"} alt="image" width="1000" height="100" className="w-full"/>
+            </a>
+            <a href="/DaydreamRecap.pdf" target="_blank" rel="noopener noreferrer" className="w-[37%] hover:shadow-xl transition-shadow duration-300 shadow-black/50 shadow-md">
+              <Image src={"/images/daydream.png"} alt="image" width="1000" height="100" className="w-full"/>
+            </a>
+          </div>
+        </div>
+
+        <div className="flex flex-col w-full items-start justify-start pt-10">
+          <h1 className="text-left py-5 lg:pt-10 text-2xl font-sansation-bold lg:text-4xl">Questions?</h1>
+          <p className="text-left text-md lg:text-2xl leading-relaxed">
+            Feel free to email our lead organizer, Chi Do, at dothucchi@gmail.com. Also check out our Instagram @springfieldhackers.
+          </p>
+        </div>
+      </div>
         
     </div>
   );
