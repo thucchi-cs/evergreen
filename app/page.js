@@ -64,7 +64,7 @@ export default function Home() {
           <div className="items-start justify-start h-fit w-full flex flex-col">
             <Image src={"/Who.png"} alt="image" width="1000" height="100" className="w-[40%]"/>
             <p className="text-[#12372A] text-left text-md lg:text-2xl leading-relaxed py-5">
-              Evergeen is open to all teenagers aged 13 to 18, inclusive, who are interested in coding or arts. We welcome everyone of all skill levels and will have workshops for beginners
+              Evergreen is open to all teenagers aged 13 to 18, inclusive, who are interested in coding or arts. We welcome everyone of all skill levels and will have workshops for beginners
             </p>
           </div>
           <div className="items-start justify-start h-fit w-full flex flex-col">
