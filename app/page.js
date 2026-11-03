@@ -42,7 +42,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-[#12372A] font-sansation">
-      <div className="grid grid-cols-2 w-[90vw] items-center justify-center h-[100vh]">
+      <div className="grid grid-cols-2 w-[90vw] items-center justify-center py-30">
         <div className="items-start justify-start h-fit w-full flex flex-col">
           <Image src={"/EvergreenLogo1.png"} alt="image" width="1000" height="100" className="w-[80%]"/>
           <p className="text-[#8E9E7B] text-left text-md lg:text-2xl leading-relaxed py-5">
@@ -59,7 +59,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full items-start justify-start min-h-[100vh] h-fit bg-[#8E9E7B] px-[5vw] py-20 gap-y-15">
+      <div className="flex flex-col w-full items-start justify-start h-fit bg-[#8E9E7B] px-[5vw] py-20 gap-y-15">
         <div className="grid grid-cols-2 items-start justify-start w-full gap-x-15">
           <div className="items-start justify-start h-fit w-full flex flex-col">
             <Image src={"/Who.png"} alt="image" width="1000" height="100" className="w-[40%]"/>
@@ -149,7 +149,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full items-start justify-start min-h-[100vh] h-fit bg-[#12372A] px-[5vw] py-20">
+      <div className="flex flex-col w-full items-start justify-start h-fit bg-[#12372A] px-[5vw] py-20">
         <div className="flex flex-col w-full">
           <h1 className="text-center pb-2 text-2xl font-sansation-bold lg:text-4xl">SCHEDULE</h1>
           <p className="text-center pb-10 text-md lg:text-md px-10 lg:px-0">* Participants are not required (but are recommended) to be present for the entirety of the event *</p>
@@ -196,7 +196,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col w-full items-center justify-start min-h-[100vh] h-fit bg-[#D6D3B5] px-[5vw] py-20 text-[#12372A]">
+      <div className="flex flex-col w-full items-center justify-start h-fit bg-[#D6D3B5] px-[5vw] py-20 text-[#12372A]">
         <h1 className="text-center py-5 lg:pb-10 text-2xl font-sansation-bold lg:text-4xl">ABOUT US</h1>
         <p className="text-left text-md lg:text-2xl leading-relaxed py-5">
           We are Springfield Hackers, affiliated with Hack Club, and our mission is to create more free and accessible STEM events such as this one to the teenage community of Springfield Missouri. We are teen-led and we aim to create a welcoming community to all who are interested in the world of tech and coding.
