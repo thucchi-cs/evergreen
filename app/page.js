@@ -37,7 +37,8 @@ export default function Home() {
 
   const sponsors = [
     {image: "/images/NPD-Logo-color.png", url: "https://www.beyondthecontract.com/", name: "NorthPoint Development"},
-    {image: "/images/Mostly_Serious_logo_Orange.png", url: "https://www.mostlyserious.io/", name: "Mostly Serious"}
+    {image: "/images/Mostly_Serious_logo_Orange.png", url: "https://www.mostlyserious.io/", name: "Mostly Serious"},
+    {image: "/images/CashewChickens.png", url: "#", name: "Springfield Robotics Cashew Chickens"},
   ];
 
   return (
