@@ -23,7 +23,7 @@ export default function Home() {
       title: "Sunday, November 22nd",
       items: [
         {event: "Doors open", time: "9:00 AM"},
-        {event: "Breakfast", time: "9:00 AM"},
+        // {event: "Breakfast", time: "9:00 AM"},
         {event: "Workshop 3", time: "11:00 AM"},
         {event: "Lunch", time: "12:30 PM"},
         {event: "Activity", time: "2:30 PM"},
